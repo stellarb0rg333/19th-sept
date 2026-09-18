@@ -439,10 +439,11 @@ public class InvoiceController : Controller
 
         var availableYears = periods.Select(value => value.Year).Distinct().OrderByDescending(value => value).ToList();
         var state = Session[PageStateKeys.MonthlyHistoryPageState] as MonthlyHistoryPageState;
-        var selectedYear = year ?? state?.Year ?? (periods.Count > 0 ? periods[^1].Year : DateTime.Now.Year);
+        var latestPeriod = periods.Count > 0 ? periods[periods.Count - 1] : DateTime.Now;
+        var selectedYear = year ?? state?.Year ?? latestPeriod.Year;
         var selectedMonth = month.HasValue && month.Value >= 1 && month.Value <= 12
             ? month.Value
-            : state?.Month ?? (periods.Count > 0 ? periods[^1].Month : DateTime.Now.Month);
+            : state?.Month ?? latestPeriod.Month;
         if (!availableYears.Contains(selectedYear))
         {
             availableYears.Add(selectedYear);
