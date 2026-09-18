@@ -1,0 +1,57 @@
+"::-webkit-datetime-edit" is not a valid pseudo-element.
+Predefined type 'System.Index' is not defined or imported
+Missing compiler required member 'System.Index..ctor'
+Predefined type 'System.Index' is not defined or imported
+Missing compiler required member 'System.Index..ctor'
+Predefined type 'System.Index' is not defined or imported
+Missing compiler required member 'System.Index..ctor'
+Predefined type 'System.Index' is not defined or imported
+Missing compiler required member 'System.Index..ctor'
+"::-webkit-datetime-edit" is not a valid pseudo-element.
+"::-webkit-datetime-edit-fields-wrapper" is not a valid pseudo-element.
+"::-webkit-datetime-edit-fields-wrapper" is not a valid pseudo-element.
+Nullability of type of parameter 'existingValue' doesn't match overridden member (possibly because of nullability attributes).
+Possible null reference return.
+Possible null reference return.
+Nullability of type of parameter 'value' doesn't match overridden member (possibly because of nullability attributes).
+The referenced component 'System.Web.WebPages.Deployment' could not be found.
+The referenced component 'Ninject.Web.Common.WebHost' could not be found.
+The referenced component 'Newtonsoft.Json' could not be found.
+The referenced component 'Microsoft.Web.Infrastructure' could not be found.
+The referenced component 'WebActivatorEx' could not be found.
+The referenced component 'System.Web.Helpers' could not be found.
+The referenced component 'System.Web.WebPages' could not be found.
+The referenced component 'System.Web.Razor' could not be found.
+The referenced component 'System.Web.WebPages.Razor' could not be found.
+The referenced component 'Ninject.Web.Common' could not be found.
+The referenced component 'Ninject' could not be found.
+The referenced component 'Ninject.Web.Mvc' could not be found.
+Found conflicts between different versions of the same dependent assembly. Please set the "AutoGenerateBindingRedirects" property to true in the project file. For more information, see http://go.microsoft.com/fwlink/?LinkId=294190.
+The referenced component 'System.Web.Mvc' could not be found.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+Dereference of a possibly null reference.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+Use primary constructor
+Collection initialization can be simplified
+Null check can be simplified
+Collection initialization can be simplified
+Collection initialization can be simplified
+Use pattern matching
+Use pattern matching
+Collection initialization can be simplified
+Collection initialization can be simplified
+Collection initialization can be simplified
+Collection initialization can be simplified
+Collection initialization can be simplified
+Collection initialization can be simplified
+Collection initialization can be simplified
