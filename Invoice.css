@@ -147,6 +147,77 @@ established by Usage.css.
     border-radius: 8px;
 }
 
+.monthly-history-table-card table.monthly-history-table {
+    table-layout: fixed;
+}
+
+.monthly-history-table-card table.monthly-history-table thead,
+.monthly-history-table-card table.monthly-history-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.monthly-history-table-card table.monthly-history-table tbody {
+    display: block;
+    max-height: 510px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.monthly-history-table-card table.monthly-history-table th,
+.monthly-history-table-card table.monthly-history-table td {
+    width: 10% !important;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+.monthly-history-table-card table.monthly-history-table th {
+    background: rgba(176, 216, 232, 0.88) !important;
+    color: #000 !important;
+    font-size: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    padding: 0.42rem 0.1rem;
+    border-right: 1px solid #fff;
+}
+
+.monthly-history-table-card table.monthly-history-table td {
+    font-size: 0.68rem !important;
+    color: var(--gray-700);
+    padding: 0.58rem 0.35rem;
+    border-bottom: 1px solid var(--gray-200);
+    overflow-wrap: anywhere;
+}
+
+.monthly-history-table-card table.monthly-history-table tbody tr:nth-child(even) {
+    background: rgba(255, 244, 239, 0.38);
+}
+
+.monthly-history-table-card table.monthly-history-table tbody tr:hover {
+    background: rgba(255, 228, 214, 0.78);
+}
+
+.monthly-history-table-card table.monthly-history-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.monthly-history-table-card table.monthly-history-table tfoot {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.monthly-history-table-card table.monthly-history-table tfoot th {
+    font-size: 0.68rem;
+    text-transform: none;
+    letter-spacing: normal;
+    background: #f8fafc !important;
+}
+
 .monthly-history-table tfoot th {
     font-weight: 700;
     background: #f8fafc;
@@ -160,11 +231,31 @@ established by Usage.css.
 }
 
 .monthly-history-export-filter .voicebot-filter-field,
-.monthly-history-export-filter .invoice-select,
+.monthly-history-export-filter .monthly-history-period-input,
 .monthly-history-export-button {
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
+}
+
+.monthly-history-period-input {
+    height: 2.35rem;
+    padding: 0.5rem 0.625rem;
+    background: #fff;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 6px;
+    color: var(--gray-700);
+    font: inherit;
+}
+
+.monthly-history-period-input:hover {
+    border-color: var(--gray-400);
+}
+
+.monthly-history-period-input:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    outline: none;
 }
 
 .monthly-history-export-filter .voicebot-filter-field > span {
@@ -211,19 +302,6 @@ established by Usage.css.
     min-width: 0;
     padding-left: 0.25rem;
     padding-right: 0.15rem;
-}
-
-.invoice-upload-rows-table td:nth-child(4) input[type="datetime-local"]::-webkit-datetime-edit,
-.invoice-upload-rows-table td:nth-child(5) input[type="datetime-local"]::-webkit-datetime-edit,
-.invoice-upload-rows-table td:nth-child(4) input[type="datetime-local"]::-webkit-datetime-edit-fields-wrapper,
-.invoice-upload-rows-table td:nth-child(5) input[type="datetime-local"]::-webkit-datetime-edit-fields-wrapper {
-    padding: 0;
-}
-
-.invoice-upload-rows-table td:nth-child(4) input[type="datetime-local"]::-webkit-calendar-picker-indicator,
-.invoice-upload-rows-table td:nth-child(5) input[type="datetime-local"]::-webkit-calendar-picker-indicator {
-    margin-left: 0;
-    padding: 0;
 }
 
 .invoice-upload-rows-wrapper {
