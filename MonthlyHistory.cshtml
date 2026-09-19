@@ -57,7 +57,7 @@
 
         <section class="invoice-reconciliation-card">
             <div class="invoice-table-wrap monthly-history-table-card">
-                <table class="invoice-history-table monthly-history-table">
+                <table class="usage-results-table monthly-history-table">
                     <thead>
                         <tr>
                             <th>From date</th><th>To date</th><th>Vendor</th><th>₹/min</th>
@@ -102,37 +102,21 @@
                   class="voicebot-filter-grid monthly-history-export-filter">
                 <div class="voicebot-filter-field voicebot-filter-field-compact">
                     <span><label for="monthly-history-from">From month and year</label></span>
-                    <select id="monthly-history-from" name="fromPeriod" class="invoice-select">
-                        @foreach (var period in Model.Periods)
-                        {
-                            var value = period.ToString("yyyy-MM");
-                            if (value == Model.FromPeriod)
-                            {
-                                <option value="@value" selected="selected">@period.ToString("MMMM yyyy")</option>
-                            }
-                            else
-                            {
-                                <option value="@value">@period.ToString("MMMM yyyy")</option>
-                            }
-                        }
-                    </select>
+                    <input id="monthly-history-from"
+                           name="fromPeriod"
+                           type="month"
+                           value="@Model.FromPeriod"
+                           class="monthly-history-period-input"
+                           required="required" />
                 </div>
                 <div class="voicebot-filter-field voicebot-filter-field-compact">
                     <span><label for="monthly-history-to">To month and year</label></span>
-                    <select id="monthly-history-to" name="toPeriod" class="invoice-select">
-                        @foreach (var period in Model.Periods)
-                        {
-                            var value = period.ToString("yyyy-MM");
-                            if (value == Model.ToPeriod)
-                            {
-                                <option value="@value" selected="selected">@period.ToString("MMMM yyyy")</option>
-                            }
-                            else
-                            {
-                                <option value="@value">@period.ToString("MMMM yyyy")</option>
-                            }
-                        }
-                    </select>
+                    <input id="monthly-history-to"
+                           name="toPeriod"
+                           type="month"
+                           value="@Model.ToPeriod"
+                           class="monthly-history-period-input"
+                           required="required" />
                 </div>
                 <div class="voicebot-filter-actions">
                     <button type="submit" class="invoice-upload-button monthly-history-export-button">Export CSV</button>
